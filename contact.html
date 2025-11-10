@@ -7,21 +7,28 @@
     </head>
     <body>
         <div class="container">
-            <h1>Contact Us</h1>
-            <p>we would love to respond to your queries and also help you to book a reservation.feel free to get in touch with us.</p>
-         <div class="contact-box">
-    <form>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
+            <form action="action_page.php">
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Your email" required>
+         <label for="fname">First Name</label><br/>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.."><br/>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+        <label for="lname">Last Name</label><br/>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br/>
 
-        <button type="submit">Send Message</button>
-    </form>
-</div>   
+        <label for="country">Country</label>
+        <select id="country" name="country">
+        <option value="australia">Nigeria</option>
+        <option value="canada">Canada</option>
+        <option value="usa">Ghana</option>
+        <option value="south africa">South Africa</option>
+        </select><br/>
+
+        <label for="subject">How May We Be Of Service</label><br/>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br/>
+
+        <input type="submit" value="Submit"><br/>
+
+         </form>
+     </div>
         </div>
     </body>

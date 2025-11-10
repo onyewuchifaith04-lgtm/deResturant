@@ -7,6 +7,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Website | Contact</title>
+    <style>
+        input[type=text], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+        }
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover{
+            background-color: #45a049;
+        }
+
+        .container{
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -109,31 +139,30 @@
             </div>
         </div>
     </header>
-    <div class="Home">
-        <div class="Main_Slide">
-            <div>
-                
-                <h1>Contact Us</h1>
+    <div class="container">
+  <form action="action_page.php">
 
-                <p>we would love to hear from you! whether you have a question,feedback,or a reservation inquiry,please don`t hesitate to reach out.</p>
+    <label for="fname">First Name</label><br/>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br/>
 
-                <button class="red_btn">Visit Now <i class="fa-solid fa-arrow-right-long"></i></button>
-            </div>
-            <div>
-                <form>
-        <label for="name">Full Name</label>
-        <input type="text" id="name" name="name" placeholder="Your name" required>
+    <label for="lname">Last Name</label><br/>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br/>
 
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="email" placeholder="Your email" required>
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Nigeria</option>
+      <option value="canada">Canada</option>
+      <option value="usa">Ghana</option>
+      <option value="south africa">South Africa</option>
+    </select><br/>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+    <label for="subject">How May We Be Of Service</label><br/>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br/>
 
-        <button type="submit">Send Message</button>
-    </form>
-            </div>                     
-        </div>
+    <input type="submit" value="Submit"><br/>
+
+  </form>
+</div>
 
         <!-- <div class="food-items">
            <div class="item" >
